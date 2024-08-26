@@ -59,12 +59,10 @@ execute as @a[team=scale_08x] run attribute @s generic.safe_fall_distance base s
 execute as @a[team=scale_08x] run attribute @s player.block_interaction_range base set 2.5
 execute as @a[team=scale_08x] run attribute @s player.entity_interaction_range base set 2.5
 
-scoreboard players set @a sneak 0
-
-execute as @a[team=scale_02x, nbt={SelectedItem: {id: "minecraft:paper"}}, scores={sneak=1..}] run effect give @s levitation 1 0 true
 execute as @a[team=scale_04x, nbt={SelectedItem: {id: "minecraft:paper"}}, scores={sneak=1..}] run effect give @s levitation 1 0 true
 execute as @a[team=scale_08x, nbt={SelectedItem: {id: "minecraft:paper"}}, scores={sneak=1..}] run effect give @s levitation 1 0 true
 
-execute as @a[team=scale_02x, nbt={SelectedItem: {id: "minecraft:paper"}}] run effect give @s slow_falling 1 0 true
 execute as @a[team=scale_04x, nbt={SelectedItem: {id: "minecraft:paper"}}] run effect give @s slow_falling 1 0 true
 execute as @a[team=scale_08x, nbt={SelectedItem: {id: "minecraft:paper"}}] run effect give @s slow_falling 1 0 true
+
+scoreboard players set @a sneak 0
