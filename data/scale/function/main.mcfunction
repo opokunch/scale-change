@@ -30,10 +30,20 @@ execute as @a[team=scale_4x] run attribute @s player.entity_interaction_range ba
 
 #02x
 execute as @a[team=scale_02x] run attribute @s generic.scale base set 0.5
-execute as @a[team=scale_02x] run attribute @s generic.jump_strength base set 0.21
+execute as @a[team=scale_02x] run attribute @s generic.jump_strength base set 0.3
 execute as @a[team=scale_02x] run attribute @s generic.step_height base set 0.3
 execute as @a[team=scale_02x] run attribute @s generic.max_health base set 10
-execute as @a[team=scale_02x] run attribute @s generic.movement_speed base set 0.1
+execute as @a[team=scale_02x] run attribute @s generic.movement_speed base set 0.05
 execute as @a[team=scale_02x] run attribute @s generic.safe_fall_distance base set 1.5
-execute as @a[team=scale_02x] run attribute @s player.block_interaction_range base set 3
-execute as @a[team=scale_02x] run attribute @s player.entity_interaction_range base set 3
+execute as @a[team=scale_02x] run attribute @s player.block_interaction_range base set 2.5
+execute as @a[team=scale_02x] run attribute @s player.entity_interaction_range base set 2.5
+
+#04x
+execute as @a[team=scale_04x] run attribute @s generic.scale base set 0.25
+execute as @a[team=scale_04x] run attribute @s generic.jump_strength base set 0.18
+execute as @a[team=scale_04x] run attribute @s generic.step_height base set 0.3
+execute as @a[team=scale_04x] run attribute @s generic.max_health base set 10
+execute as @a[team=scale_04x] run attribute @s generic.movement_speed base set 0.025
+execute as @a[team=scale_04x] run attribute @s generic.safe_fall_distance base set 0.75
+execute as @a[team=scale_04x] run attribute @s player.block_interaction_range base set 2.5
+execute as @a[team=scale_04x] run attribute @s player.entity_interaction_range base set 2.5
