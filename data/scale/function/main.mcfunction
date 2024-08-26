@@ -61,7 +61,7 @@ execute as @a[team=scale_08x] run attribute @s player.entity_interaction_range b
 
 
 #0?xwallclim
-execute as @a run attribute @s generic.gravity base set -.08
+execute as @a run attribute @s generic.gravity base set .08
 
 execute as @a[team=scale_02x, y_rotation=-45..45] at @s unless block ^ ^ ^.25 air run attribute @s generic.gravity base set -.005
 execute as @a[team=scale_04x, y_rotation=-45..45] at @s unless block ^ ^ ^.25 air run attribute @s generic.gravity base set -.005
