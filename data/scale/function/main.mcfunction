@@ -60,10 +60,10 @@ execute as @a[team=scale_08x] run attribute @s player.block_interaction_range ba
 execute as @a[team=scale_08x] run attribute @s player.entity_interaction_range base set 2.5
 
 scoreboard players set @a sneak 0
-#0?xwallclim
-execute as @a[team=scale_02x, y_rotation=-45..45, scores={sneak=1..}] at @s unless block ^ ^ ^.25 air run attribute @s generic.gravity base set -.005
-execute as @a[team=scale_04x, y_rotation=-45..45, scores={sneak=1..}] at @s unless block ^ ^ ^.25 air run attribute @s generic.gravity base set -.005
-execute as @a[team=scale_08x, y_rotation=-45..45, scores={sneak=1..}] at @s unless block ^ ^ ^.25 air run attribute @s generic.gravity base set -.005
+
+execute as @a[team=scale_02x, nbt={SelectedItem: {id: "minecraft:paper"}}, scores={sneak=1..}] run effect give @s levitation 1 0 true
+execute as @a[team=scale_04x, nbt={SelectedItem: {id: "minecraft:paper"}}, scores={sneak=1..}] run effect give @s levitation 1 0 true
+execute as @a[team=scale_08x, nbt={SelectedItem: {id: "minecraft:paper"}}, scores={sneak=1..}] run effect give @s levitation 1 0 true
 
 execute as @a[team=scale_02x, nbt={SelectedItem: {id: "minecraft:paper"}}] run effect give @s slow_falling 1 0 true
 execute as @a[team=scale_04x, nbt={SelectedItem: {id: "minecraft:paper"}}] run effect give @s slow_falling 1 0 true
